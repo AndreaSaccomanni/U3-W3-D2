@@ -12,13 +12,18 @@ const AllTheBooks = () => (
               <Card.Img variant="top" src={book.img} />
               <Card.Body>
                 <Card.Title>{book.title}</Card.Title>
-                <Card.Text>
-                  <strong>Category: </strong>
-                  {book.category}
-                  <br />
-                  <strong>Price: </strong>
-                  {book.price}$
-                </Card.Text>
+                <div>
+                  <Card.Text className="d-flex justify-content-around mt-4">
+                    <p>
+                      <strong>Category: </strong>
+                      {book.category}
+                    </p>
+                    <p>
+                      <strong>Price: </strong>
+                      {book.price}$
+                    </p>
+                  </Card.Text>
+                </div>
               </Card.Body>
             </Card>
           </Col>
